@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe 04</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+      iframe#frame1{
+        width: 94vw;
+        height: 500px;
+        border: 2px solid black;
+      }
+
+      a:hover{
+        background-color: black;
+        padding: 3px;
+        color: white;
+      }
+    </style>
+</head>
+<body>
+    <h1> conteudo dentro do iframe</h1>
+
+    <ul>
+        <li><a href="exercicios-praticos/sitee03.html" target="frame2">pagina 1</a></li>
+        <li><a href="exercicios-praticos/sitee02.html" target="frame2">pagina 2</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sit similique porro amet est voluptates distinctio aliquid inventore enim, magnam pariatur recusandae blanditiis eaque quos qui doloremque quas ut sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptates libero vitae error eum rem repellendus aliquam ipsam inventore modi sed, vero doloremque assumenda explicabo aspernatur reprehenderit odit nesciunt dolorem.</p>
+
+    <iframe id="frame1" name="frame2" srcdoc="<h1>conteudo da pagina principal usando tags html dentro de iframe</h1> "></iframe>  <!-- tirando o src, colocando o srcdoc, podemos colocar conteudo dentro do iframe principal da nossa pagina -->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est necessitatibus dolorem sed maiores sit ipsa soluta veritatis cupiditate ullam quaerat laudantium, a animi temporibus tempore! Itaque quam repudiandae consectetur praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, ad id error blanditiis accusamus reprehenderit magnam dolorum inventore eum, officia repellat? Labore esse suscipit maiores, mollitia iure nulla quis saepe!</p>
+</body>
+</html>

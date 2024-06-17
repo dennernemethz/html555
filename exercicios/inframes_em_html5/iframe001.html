@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>usando iframe</title>
+    <style>
+        iframe{
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>testando o uso do iframe</h1>
+    <p>Acessando o site do curso em video
+
+         <!-- se caso usar css aqui no html e quiser modificar o iframe dentro da css, sua configuraçao vai ser apenas dentro da css -->
+         <!-- caso nao tenha nenhuma config no style dentro de css, vai funcionar as configurações aqui do html, caso nao tenha nenhum das duas, vai ficar tamanho padrão 300x150-->
+          <!-- tamanho paadrao de um iframe e de 300x150-->
+          <!-- scolling serve para caso voce deseje realizar barra de rolagem no iframe ou nao, scrolling=no, scrolling=yes, scrolling=auto que é padrão -->
+          <!--sobre o FRAMEBORDER pode alternar entre 0 e 1 0 sem borda e 1 com a borda e pode configurar no css com border tmb -->
+        <iframe src="https://www.cursoemvideo.com/" frameborder="0" height="500" width="500" scolling="no"></iframe> <!-- ao lado de frameborder posso colocar altura ou largura ou os dois para modificar no site -->
+        <a href="https://www.cursoemvideo.com/" target="_blank"> curso em video</a>  <!-- caso o iframe nao aparece no site colocar apenas um link com endereço do site correto -->
+        <!-- exite duas maneiras de usar o iframe, com <iframe> ou iframe src"">-->
+    </p>
+</body>
+</html>

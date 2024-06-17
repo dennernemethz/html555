@@ -1,0 +1,178 @@
+@charset "UTF-8"; 
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@100..900&family=Rubik+Burned&display=swap');  /*importando o link da fonte usada do google fonts*/ 
+
+@font-face {
+    font-family: 'Android';
+    src: url('../HTML/android/fontes/idroid.otf') format('opentype');
+    font-weight: normal; /* comando usado para poder usar uma fonte baixada de um site */ 
+}
+
+:root{ /*  root para poder criar variaveis */
+    --cor0: #c5ebd6; /*cores */ 
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2f8a66;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+   
+    /*embaixo variaveis criadas para poder usar e facilitar na hora de usar o css para fazer a pagina */ 
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: "Bebas Neue", sans-serif;
+    --font-android: 'android','sans-serif'
+}
+
+*{ /* * seletor universal,Esse seletor representa todos os elementos serão afetados pelas definições de estilo ali colocadas   */
+    margin: 0px;
+    padding: 0px;
+}
+body{
+ background-color: #c5ebd6;
+ font-family: var(--font-padrao);  
+}
+a.externo::after{
+    content: '\00A0\1F517'; /* define oque vai ficar depois do link o CONTENT */ 
+}
+header{
+    font-family: var(--font-destaque);
+    color: var(--cor3);
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5) );
+    min-height: 150px; /* responsividade do site quando for usar o site peli cel*/ 
+    text-align: center;
+    padding-top: 40px;
+    background-color: #063d1e;
+}
+
+header > p{ /* embaixo ajustes do paragrafo p do header */ 
+    color: white;
+    
+    font-size: 1.2em;
+    max-width: 600px; /* max de largura do topo do site ou o header*/ 
+    padding-right: 10px; 
+    padding-left: 10px;
+    margin: auto; /*vai ajustar o paragrafo para o centro*/ 
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.45);
+}
+header > h1{
+    
+    color: white;
+    font-size: 3em; /*tamanho da fonte */ 
+    font-weight: normal;
+    margin-bottom: 20px; /*vai ajustar a margem embaixo para nao ficar grudada */ 
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.45); /*vai por sombra atraz do texto*/ 
+}
+ nav{  /*modificando os links da paginas*/ 
+    background-color: var(--cor5); /* colocar fundo no nav aonde fica os links "menu" do site*/ 
+    box-shadow: 0px 7px 9px black; 
+    padding: 10px; /* por o tamanho do fundo ou o tamanho do background*/ 
+}
+nav > a {  /* modificando os links dentro de nav*/ 
+    color: white;
+    text-decoration: none; /* tirou o sublinhado do link*/ 
+    padding: 10px; /* tamanho */ 
+    font-weight: bold; /* negrito */ 
+    transition-duration: 1s; /* isso faz com que quando voce passe o mouse em cima, a duração de background ou color "cor da fonte" tenha um efeito diferente */ 
+    border-radius:  5px;
+}
+nav > a:hover{ /* pseudo classe hover, ao passar o mouse por cima de, vai disparar um efeito  pode ser um background, um color, um display etc  */ 
+    color: var(--cor2);
+    background-color: var(--cor5);
+}
+
+main{ /* embaixo modificando o conteudo da pagina*/ 
+    min-width: 300px;
+    max-width: 1000px; /*vai colocar as bordas como se fosse realmente uma pagina*/ 
+    background-color: hwb(0 100% 0%);
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.603); /* usando 0px 0px para nao ficar na vertical usando somemte na horizontal */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;  /* apenas para deixar o rodapé do main com bordas esquerda e direita */
+    
+}
+
+main > h1{
+    font-family: var(--font-android);
+    color: var(--cor3);
+}
+
+main  h2 {
+ font-family: var(--font-android);
+ font-size: 1.3em;
+ color: var(--cor4);
+ background-image: linear-gradient(to right, var(--cor2), transparent);
+ text-indent: 8px; /* text-indent especifica a quantidade de recuo (espaço vazio) que é colocado antes de linhas de texto em um bloco (PARAGRAFO) */
+}
+
+main p {
+    font-size: 1em;
+    line-height: 2em;
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+main strong{ /* esse comando tudo que estiver em negrito <strong> na pagina vai ser modificado */ 
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor0);
+    padding: 1px 6px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor3);
+}
+
+main img { /*vai deixar a foto em 100% na pagina*/ 
+    width: 100%;
+}
+main img.pequena{ /* conteudo usando um class*/ 
+    width: 50%; /* colocando 50% nessa imagem para ela ter apenas 50% o tamanho */
+    display: block;  /* disparando o display para imagem ficar no centro da pagina*/
+    margin: auto;
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+aside > h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px; /* esse -10pxs ao inves de deixar para fora vai fazer um efeito de deixxar organizado para dentro */ 
+    border-radius: 10px 10px 0px 0px; 
+}
+aside > ul{ /*modificando as listas dentro de aside */ 
+    list-style-type: '\2714\00A0\00A0'; /*para por emojis*/ 
+    list-style-position: inside; /*faz com que a sua lista fique dentro do quadro ou no seu background */ 
+    columns: 2; /*columns para deixar sua lista caso for muito grande, deixar em duas partes, mos pode por em quantas quiser */ 
+}
+footer{
+    background-color: var(--cor5);
+}
+div.video{
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+div.video>iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}

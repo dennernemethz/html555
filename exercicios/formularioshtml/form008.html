@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>form008</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <p>
+            <label for="n1">numero 1:</label>
+            <input type="number" name="numero" id="n1" min="0" max="50" required oninput="soma1.innerHTML = Number(n1.value) + Number(n2.value)">
+        </p>
+
+        <p>
+            <label for="n2">numero 2:</label>
+            <input type="number" name="numeero" id="n2" min="0" max="50" required oninput="soma1.innerHTML = Number(n1.value) + Number(n2.value)">
+        </p>
+
+        <p>
+            <label for="soma1">soma</label>
+            <output name="soma" id="soma1">0</output>
+        </p>
+        
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>

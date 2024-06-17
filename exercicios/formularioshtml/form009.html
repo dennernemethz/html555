@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>form009</h1>
+
+    <form action="cadastro.php" method="get">
+
+        <p>
+            <label for="num1">calculo</label>
+            <input type="range" name="numero" id="num1" min="0" max="10" required value="5" oninput="ival.innerHTML = Number(num1.value)">
+            <output id="ival">5</output>
+        </p>
+
+        
+    </form>
+</body>
+</html>

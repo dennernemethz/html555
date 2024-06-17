@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body{
+            background-image: linear-gradient(to left, darkblue, blue);
+        }
+         
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            background-color: gray;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 400px;
+            color: gold;
+            
+        }
+        
+        td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center; /*alinhamento horizontal */
+            vertical-align: top; /*alinhamento vertical*/
+        }
+        
+        h1{
+            text-align: center;
+            color: gold;
+            text-shadow: 2px 2px 2px black;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>minha primeira tabela </h1>
+    <table><!--tabela-->
+        <tr>  <!--linha de tabela -->
+            <td> A1 </td> <!--dados da tabela-->
+            <td> B2 </td>
+            <td> C2 </td>
+        </tr>
+        <tr class="linha">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td class="dado">A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+    </table>
+</body>
+</html>

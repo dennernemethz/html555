@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=Limelight&family=Passion+One:wght@400;700;900&family=Roboto+Slab:wght@100..900&family=Rubik+Burned&family=Sixtyfour&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=Limelight&family=Passion+One:wght@400;700;900&family=Roboto+Slab:wght@100..900&family=Rubik+Burned&family=Sixtyfour&family=Sriracha&display=swap');
+
+:root{
+    --fontt1:  Verdana, Geneva, Tahoma, sans-serif;
+    --fontt2: "Passion One", sans-serif;
+    --fontt3: "Sriracha", cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fontt1);
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fontt2);
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+section{   /* configuração para o efeito paralax de imagem */ 
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /* serve para deixar o espaço entre as linhas */
+    padding-left: 30px;
+    font-family: var(--fontt3);
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.492);
+    width: 400px;
+    text-shadow: 1px 1px 1px black;
+   
+
+}
+
+section.normal{
+  background-color: white;
+  color: black;
+}
+section.imagem{
+    background-color: rgb(90, 90, 90);
+    color: white;
+    box-shadow:inset 6px 6px 13px 0px black;  /* colocando efeito de sombreamento por dentro "INSET" box-shadow: inset 6px 6px 13px 0px black;  13px espalhamento  0px de ampliação */
+}
+
+section#img01{
+    background-image: url("../imagens/background001.jpg");
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section#img02{
+    background: url("../imagens/background002.jpg");
+    background-position: right bottom;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+footer{
+    background-color: black;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens-para-praticar/favicons-para-praticar/buraco-negro.png" type="image/x-icon">
+    <title>links</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right, #ff0000, #ff6c6c);
+        }
+
+  a{   /* usando a como link para decorar */ 
+    color: aqua;
+    text-decoration: none; /*tirando o sublinhado*/
+    font-weight: bolder; /*usando como negrito*/
+  }
+  a:visited{ /* se o site ja foi visitado vai ficar da cor ou jeito que escolher */ 
+    color: #ffee00;
+  }
+
+  a:hover{  /*quando passar o mouse*/
+    text-decoration: underline; /* sublinhado*/
+    color: blue; /*usando a cor quando pasaar o mouse por cima */
+  }
+  a:active { /* ao clicar vai aparecer a cor desejada */
+    color: #00ff11; 
+  }
+
+  a::after{ /*duas vezes :: quer dizer pseudo elemento, after é um elemento que vai indicar depois do assunto indicado que é um link */
+    content: ' [link]';
+
+  }
+  .especial::after{
+    content: ' qlq coisa ';
+  }
+    </style>
+</head>
+<body>
+    <h1>links abaixo &downarrow;</h1>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/denner-nemeth-de-queiroz-b45a8927b/" class="especial" target="_blank"> meu linkedin</a></li>  <!--- para fazer um link especial basta colocar um class após o link-->
+        
+    </ul>
+</body>
+</html>
