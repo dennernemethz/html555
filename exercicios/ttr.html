@@ -10,50 +10,57 @@
             padding: 0px;
         }
         body{
-            background-image: linear-gradient(to right, rgb(255, 0, 128), rgb(179, 0, 255), rgb(102, 0, 255));
-            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to left, rgba(136, 0, 255, 0.791),rgba(0, 119, 255, 0.751));
         }
-        manu{
+        menu{
             background-color: white;
-
+            padding: 15px;
         }
-        menu h2{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            text-align: center;
+        menu>h2{
             color: black;
-            text-shadow: 3px 3px 5px green;
+            text-shadow: 0px 0px 6px yellow;
+            text-align: center;
         }
-        div#calculator{
-           display: block;
-           width: 350px;
-           height: 350px;
-           position: relative;
-           background-image: url(imagens-para-praticar/wallpaper001.jpg);
+        main{
+            position: absolute;
         }
-        input.envio{
-            width: 70px;
-            background-color: black;
-            color: white;
+        div#formulario{
+            
+            width: 450px;
+            height: 100px;
+            border-radius: 20px;
+            padding: 12px;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(40%, 90%);
+            box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.641);
+            background-image: url(imagens-para-praticar/pexels-onbab-26546605.jpg);
+            background-size: cover;
+            background-position-x: right;
         }
-
     </style>
 </head>
 <body>
     <menu>
-        <h2> Testando </h2>
-    </menu>
-    <div id="calculator">
-      <form action="#" method="post" autocomplete="off">
-        <label for="nome">seu nome:</label>
-        <input type="text" name="inome" id="nome" placeholder="username" size="10" >
+        <h2>test</h2>
+    </menu> 
+    <main>
+        <div id="img">
+            <!-- uma foto-->
+        </div>
+        <div id="formulario">
+            <form action="#" method="get">
+                <label for="nome">digite seu nome:</label>
+                <input type="text" name="inome" id="nome" size="10" >
 
+                <br><br><label for="senha">digite sua senha</label>
+                <input type="password" name="isenha" id="senha" size="10">
 
-        <br><br><label for="senha">sua senha:</label>
-        <input type="password" name="isenha" id="senha"  size="10" placeholder="senha">
-
-        <input class="envio" type="submit" value="enviar">
-        <input class="limpando" type="reset" value="limpar">
-      </form>
-    </div>
+                <input class="envio" type="submit" value="enviar">
+                <input class="limpando" type="reset" value="limpar">
+            </form>
+        </div>
+    </main>
 </body>
 </html>
