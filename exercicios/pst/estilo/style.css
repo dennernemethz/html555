@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+body{
+   background-color: darkslateblue;
+   width: 100vw;
+   height: 100vw;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+section#login{
+     position: absolute;
+     left: 50%;
+     right: 50%;
+     transform: translate(-50%,-50%);
+     background-color: white;    
+}
