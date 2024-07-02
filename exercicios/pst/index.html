@@ -4,22 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="estilo/style.css">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-image: linear-gradient(to left, rgb(66, 220, 237), rgb(0, 4, 255));
+        }
 
+        form{
+            margin: auto;
+            background-color: aliceblue;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: block;
+            width: 400px;
+            height: 340px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px black;
+         }
+    </style>
 </head>
 <body>
-   <main>
-    <section id="login">
-        <div id="imagem">
+    
 
+    <form action="#" method="post">
+        <div class="campo1">
+            <label for="iuser"></label>
+            <input type="email" name="user" id="iser" required autocomplete="email" placeholder="seu email" minlength="0" maxlength="30">
         </div>
-        <div id="formulario">
-            <h1>digite seu login</h1>
-            <form action="#" method="post">
-
-            </form>
+        <div class="compo2">
+            <label for="isenha"></label>
+            <input type="password" name="senha" id="isenha" required autocomplete="current-password" placeholder="sua senha" min="0" max="10">
         </div>
-    </section>
-   </main>
+        <input type="submit" value="Enviar">
+    </form>
 </body>
 </html>
