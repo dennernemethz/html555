@@ -5,7 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
+<body onload="atualizar()">
+    <article>
+        <p> minhas horas </p>
+        <div id="msg"></div>
+        <div id="coteudo"></div>
+    </article>
+<script>
+var msg =  window.document.getElementById('msg')
+var cont = window.document.getElementById('conteudo ')
+var data = new Date()
+var hora = data.getHours()
+if (hora <=12 && hora > 0){
+    msg.innerHTML = 'bom dia'
+    document.body.style.background = 'aqua'
+
+}else if (hora >12  && hora  <= 18){
+    msg.innerHTML = 'boa tarde'
+    document.body.style.background = 'red'
+}else{
+    msg.innerHTML =' boa noite'
+    document.body.style.background = 'black'
+    msg.style.color ='white'
+}
+</script>    
 </body>
 </html>
