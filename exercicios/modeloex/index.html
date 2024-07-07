@@ -1,33 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    div.conteiner{
+        display: flex;
+        background-color: thistle;
+        flex-direction: column-reverse;
+        }
+    div.item{
+        background-color: lightgray;
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+        
+    }
+    </style>
 </head>
-<body onload="atualizar()">
-    <article>
-        <p> minhas horas </p>
-        <div id="msg"></div>
-        <div id="coteudo"></div>
-    </article>
-<script>
-var msg =  window.document.getElementById('msg')
-var cont = window.document.getElementById('conteudo ')
-var data = new Date()
-var hora = data.getHours()
-if (hora <=12 && hora > 0){
-    msg.innerHTML = 'bom dia'
-    document.body.style.background = 'aqua'
+<body>
+    <div class="conteiner">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
 
-}else if (hora >12  && hora  <= 18){
-    msg.innerHTML = 'boa tarde'
-    document.body.style.background = 'red'
-}else{
-    msg.innerHTML =' boa noite'
-    document.body.style.background = 'black'
-    msg.style.color ='white'
-}
-</script>    
 </body>
 </html>
