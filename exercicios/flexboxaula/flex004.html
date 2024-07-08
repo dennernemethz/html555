@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>centralização de flex</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: darkslateblue;
+            color: white;
+        }
+        main{
+            background-color: darkolivegreen;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            width: 90vw;
+            height: 90vh;
+
+        }
+        article{
+           background-color: black;
+           width: 100px;
+           height: 100px;
+           text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article>teste</article>
+    </main>
+</body>
+</html>
